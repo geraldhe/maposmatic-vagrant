@@ -6,7 +6,7 @@
 
 cd /home/maposmatic/styles
 
-git clone https://github.com/giggls/openstreetmap-carto-de.git
+git clone https://github.com/geraldhe/openstreetmap-carto-de.git
 
 cd openstreetmap-carto-de
 
