@@ -144,6 +144,7 @@ styles="
   humanitarian
   mapquest
   german
+  german-rk
   french
   belgian
   ardenne

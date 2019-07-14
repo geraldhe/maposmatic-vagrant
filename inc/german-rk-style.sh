@@ -6,9 +6,9 @@
 
 cd /home/maposmatic/styles
 
-git clone https://github.com/giggls/openstreetmap-carto-de.git
+git clone https://github.com/giggls/openstreetmap-carto-de.git /home/maposmatic/styles/openstreetmap-carto-de-rk
 
-cd openstreetmap-carto-de
+cd openstreetmap-carto-de-rk
 
 sed -i -e's/dbname: "osm"/dbname: "gis"/' project.mml
 sed -i -e's/carto /carto -q /g' Makefile
@@ -25,13 +25,13 @@ cat <<EOF >> /home/maposmatic/ocitysmap/ocitysmap.styledefs
 [german_carto]
 name: GermanCartoOSM
 group: Countries
-description: German CartoCSS OSM style
-path: /home/maposmatic/styles/openstreetmap-carto-de/osm-de.xml
-annotation: German OSM style
+description: German CartoCSS OSM style (RK edition)
+path: /home/maposmatic/styles/openstreetmap-carto-de-rk/osm-de.xml
+annotation: German OSM style (customized for red cross)
 url: http://www.osm-baustelle.de/dokuwiki/doku.php?id=style:german
 
 EOF
 
-echo "  german_carto," >> /home/maposmatic/ocitysmap/ocitysmap.styles
+echo "  german_carto_rk," >> /home/maposmatic/ocitysmap/ocitysmap.styles
 
 
