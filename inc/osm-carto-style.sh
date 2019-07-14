@@ -7,7 +7,7 @@
 cd /home/maposmatic/styles
 git clone https://github.com/gravitystorm/openstreetmap-carto.git
 cd openstreetmap-carto
-git checkout v4.19.0
+git checkout v4.20.0
 
 ln -s /home/maposmatic/shapefiles data
 
@@ -30,6 +30,7 @@ annotation: OpenStreetMap Carto standard style
 [cartobw]
 name: CartoOsmBW
 description: B&W Variant of CartoCSS OSM style
+group: Black and White
 path: /home/maposmatic/styles/openstreetmap-carto/osm-bw.xml
 url: http://www.osm-baustelle.de/dokuwiki/style:cartoosm
 annotation: OpenStreetMap Carto with colors reduced to grayscale

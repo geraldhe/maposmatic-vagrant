@@ -12,7 +12,7 @@ git checkout site-osm-baustelle-newform
 
 
 # install dependencies
-bower --allow-root install
+(cd www/static; npm install)
 wget -O www/static/js/leaflet-omnivore.min.js http://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js
 
 # create needed directories and tweak permissions
@@ -47,14 +47,6 @@ then
 fi
 chgrp www-data media logs
 chmod g+w media logs
-
-# create places table for replacing nominatim search
-
-if ! test -f /vagrant/files/place.sql.gz
-then
-	wget https://www.osm-baustelle.de/downloads/place.sql.gz -O /vagrant/files/place.sql.gz
-fi
-zcat /vagrant/files/place.sql.gz | sudo -u maposmatic psql gis 
 
 # set up render daemon
 cp $FILEDIR/maposmatic-render.service /lib/systemd/system

@@ -72,8 +72,10 @@ apt-get install --quiet=2 --assume-yes \
     python3-gdal \
     python3-gi-cairo \
     python3-gpxpy \
+    python3-lxml \
     python3-mapnik \
     python3-pip \
+    python3-pil \
     python3-psycopg2 \
     python3-shapely \
     python3-slugify \
@@ -114,7 +116,6 @@ banner "npm packages"
 (cd /usr/local/bin; ln -s /usr/bin/nodejs node)
 npm config set loglevel warn
 
-npm install -g bower 
 npm install -g carto
 
 # this package is currently broken in Ubuntu, see e.g. 
