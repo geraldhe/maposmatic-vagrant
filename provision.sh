@@ -85,7 +85,7 @@ fi
 . $INCDIR/git-setup.sh
 
 # add "map" service-user
-useradd --create-home --groups sudo --shell /bin/bash --quiet -p secret map
+useradd --create-home --groups sudo --shell /bin/bash -p secret map
 
 # add "maposmatic" system user that will own the database and all locally installed stuff
 useradd --create-home maposmatic
