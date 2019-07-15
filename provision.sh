@@ -86,6 +86,8 @@ fi
 
 # add "map" service-user
 useradd --create-home --groups sudo --shell /bin/bash -p secret map
+mkdir /home/map/.ssh
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAABJQAAAQEA0osGCqL844rj1BugSH2QQ8mp15x7kTnE+M9n3boQUxM4sJ2nxVNxiUAu3AGSH7RGfzOWr8450FiCyz3g3MB/ufDzyi2xKcFnNNk1Ly+ZKiveY5wBqW+svqV+6tVVyAZHyzwIN6q8LJiIFyf/l2qK4h7+5rmeASydfbf1zlIi4Gh/CH9m2vmEo2aXIzhHPo1doOIgkDU4h2cop342S8J3dFuGJzmBoGmvuMR6Bhzzo62aoVq0OBRYY6m9ZIPbL6hpGhrSsLVdJOz/G1UQtbzYUm6gAqEM9yxlhZdeoWGn3F0F7e+juKowqThOlkLH8E0NN+lQlgAByT4CJzdz9kCP3w== maposmatic" > /home/map/.ssh/authorized_keys
 
 # add "maposmatic" system user that will own the database and all locally installed stuff
 useradd --create-home maposmatic
