@@ -11,8 +11,8 @@ Vagrant.configure(2) do |config|
   config.vm.provider "virtualbox" do |vb|
     # vb.gui = true
     vb.name = "maposmatic"
-    vb.memory = "4096"
-    vb.cpus   = "2"
+    vb.memory = "10240"
+    vb.cpus   = "4"
   end
 
   if Vagrant.has_plugin?("vagrant-cachier")
@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
   unless Vagrant.has_plugin?("vagrant-disksize")
     raise 'disksize plugin is not installed - run "vagrant plugin install vagrant-disksize" first'
   end
-  config.disksize.size = '150GB'
+  config.disksize.size = '50GB'
 
   config.ssh.forward_x11=true
 
