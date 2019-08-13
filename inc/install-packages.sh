@@ -70,6 +70,7 @@ apt-get install --quiet=2 --assume-yes \
     python3-feedparser \
     python3-fiona \
     python3-gdal \
+    python3-geojson \
     python3-gi-cairo \
     python3-gpxpy \
     python3-lxml \
